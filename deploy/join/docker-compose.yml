@@ -87,7 +87,9 @@ services:
       - JWT_SECRET_PATH=/data/jwt/jwt.hex
       - BRIDGE_POSTBLOCK=http://api:9200/admin/v1/bridge/block
       - BRIDGE_GETADDRESSES=http://api:9000/v1/bridge/addresses
-      - BEACON_STATE_URL=https://beaconstate.info/
+      # - BEACON_STATE_URL=https://beaconstate.info/ 
+      # https://discord.com/channels/1336477374442770503/1408382697537011814/1457659111264227410
+      - BEACON_STATE_URL=http://testing.mainnet.beacon-api.nimbus.team
       - PERSISTENT_DB_DIR=/persistent-db
     volumes:
       - .inference-eth/geth:/data/geth
